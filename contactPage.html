@@ -1,0 +1,283 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="Head1" runat="server">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Idara Contact Details</title>
+    <style>
+      section {
+        position: relative;
+      }
+      .container-card {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .container-card_dl {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .container-card .card {
+        position: relative;
+        width: 260px;
+        height: 335px;
+        background: #616060;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 21px;
+        backdrop-filter: blur(10px);
+      }
+      .container-card .card:hover {
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      }
+      .container-card .card .content-card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0.5;
+        transition: 0.5s;
+        height: 70%;
+      }
+      .container-card .card:hover .content-card {
+        opacity: 1;
+        transform: translateY(-30px);
+      }
+      .container-card .card .content-card .logoBx {
+        position: relative;
+        width: 172px;
+        height: 172px;
+        border-radius: 50%;
+        overflow: hidden;
+        top: -10px;
+        border: 10px solid rgba(145 140 140);
+      }
+      .container-card .card .content-card {
+        margin-top: -20px;
+      }
+      .container-card .card .content-card .logoBx img {
+        width: 100%;
+        height: 172px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      .container-card .card .content-card .contentBx h3 {
+        color: #fff;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px;
+        margin-top: 5px;
+        line-height: 1em;
+      }
+      .container-card .card:hover .content-card .contentBx h3 {
+        margin-top: -2px;
+      }
+      .container-card .card .card-icon {
+        position: absolute;
+        bottom: -20px;
+        margin-left: -55px;
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+      }
+      .container-card .card .card-icon li {
+        list-style: none;
+        margin: 0 10px;
+        opacity: 0;
+        transform: translateY(-40px);
+        transition: 0.5s;
+        transition-delay: calc(0.1s * var(--i));
+      }
+      .container-card .card:hover .card-icon li {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+      .container-card .card:hover .card-icon li:first-child {
+        margin-top: 7px;
+      }
+      .container-card .card .card-icon li a {
+        color: #fff;
+        font-size: 16px;
+        word-break: break-word;
+        text-decoration: none;
+      }
+      .container-card .card .card-icon li a span {
+        font-size: 20px;
+        margin-right: 7px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="Form1" method="post" runat="server">
+        <section>
+          <div class="container-card">
+            <!-- First logo -->
+            <div class="card">
+              <div class="content-card">
+                <div class="logoBx center">
+                  <img src="/Images/volvo.png" />
+                </div>
+                <div class="contentBx">
+                  <h3>Volvo</h3>
+                </div>
+              </div>
+              <ul class="card-icon">
+                <li style="--i: 1">
+                  <a href="www.volvocars.com" target="_blank"
+                    ><span class="material-icons">language</span
+                    >www.volvocars.com</a
+                  >
+                </li>
+                <li style="--i: 2">
+                  <a href="mailto:customercare@volvoforlife.com"
+                    ><span class="material-icons">mail</span
+                    >customercare@volvo.com</a
+                  >
+                </li>
+                <li style="--i: 3">
+                  <a href="tel:00463132500"
+                    ><span class="material-icons">call</span>00 46 31 325 00
+                    77</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Second logo -->
+            <div class="card">
+              <div class="content-card">
+                <div class="logoBx center">
+                  <img src="/Images/bmw.png" />
+                </div>
+                <div class="contentBx">
+                  <h3>BMW</h3>
+                </div>
+              </div>
+              <ul class="card-icon">
+                <li style="--i: 1">
+                  <a href="https://www.bmw.com" target="_blank"
+                    ><span class="material-icons">language</span>www.bmw.com</a
+                  >
+                </li>
+                <li style="--i: 2">
+                  <a href="mailto:contact.india@bmw.in"
+                    ><span class="material-icons">mail</span
+                    >contact.india@bmw.in</a
+                  >
+                </li>
+                <li style="--i: 3">
+                  <a href="tel:1800 102 2269 "
+                    ><span class="material-icons">call</span>1800 102 2269
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Third logo -->
+            <div class="card">
+              <div class="content-card">
+                <div class="logoBx center">
+                  <img src="/Images/porsche.png" />
+                </div>
+                <div class="contentBx">
+                  <h3>Porsche</h3>
+                </div>
+              </div>
+              <ul class="card-icon">
+                <li style="--i: 1">
+                  <a href="www.porsche.com" target="_blank"
+                    ><span class="material-icons">language</span
+                    >www.porsche.com</a
+                  >
+                </li>
+                <li style="--i: 2">
+                  <a href="mailto:contact.india@porsche.in"
+                    ><span class="material-icons">mail</span
+                    >contact.india@porsche.in</a
+                  >
+                </li>
+                <li style="--i: 3">
+                  <a href="tel:1800 102 2269"
+                    ><span class="material-icons">call</span>1800 102 2269</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Fourth logo -->
+            <div class="card">
+              <div class="content-card">
+                <div class="logoBx center">
+                  <img src="/Images/hyundai.png" />
+                </div>
+                <div class="contentBx">
+                  <h3>Hyundai</h3>
+                </div>
+              </div>
+              <ul class="card-icon">
+                <li style="--i: 1">
+                  <a href="www.hyundai.in" target="_blank"
+                    ><span class="material-icons">language</span
+                    >www.hyundai.in</a
+                  >
+                </li>
+                <li style="--i: 2">
+                  <a href="mailto:mailto:contact.india@hyundai.in"
+                    ><span class="material-icons">mail</span
+                    >contact.india@hyundai.in</a
+                  >
+                </li>
+                <li style="--i: 3">
+                  <a href="tel:1800114645"
+                    ><span class="material-icons">call</span>1800 114 3645</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Fifth logo -->
+            <div class="card">
+              <div class="content-card">
+                <div class="logoBx center">
+                  <img src="/Images/Volkswagen.png" />
+                </div>
+                <div class="contentBx">
+                  <h3>Volkswagen</h3>
+                </div>
+              </div>
+              <ul class="card-icon">
+                <li style="--i: 1">
+                  <a href="www.volkswagen.in" target="_blank"
+                    ><span class="material-icons">language</span
+                    >www.volkswagen.in</a
+                  >
+                </li>
+                <li style="--i: 2">
+                  <a href="mailto:customercare@volkswagen.in"
+                    ><span class="material-icons">mail</span
+                    >customercare@volkswagen.in</a
+                  >
+                </li>
+                <li style="--i: 3">
+                  <a href="tel:18001020909"
+                    ><span class="material-icons">call</span>1800 102 0909</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </form>
+    </div>
+  </body>
+</html>
